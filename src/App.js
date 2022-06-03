@@ -22,48 +22,31 @@ function App() {
             <div className='p-5 text-white text-right text-2xl bg-purple-800'>=<span className='text-orange-500'>2100</span></div>
         </div>
       <section className='flex items-stretch bg-purple-900 h-20'>
-              <Button 
-              text = '7' />
-              <Button 
-              text = '8' />
-              <Button 
-              text = '9' />
-              <Button 
-              text = '÷' />
+              <Button>7</Button>
+              <Button>8</Button>
+              <Button>9</Button>
+              <Button>÷</Button>
       </section>
       <section className='flex items-stretch bg-purple-900 h-20'>
-              <Button 
-              text = '4' />
-              <Button 
-              text = '5' />
-              <Button 
-              text = '6' />
-              <Button 
-              text = 'x' />
+              <Button>4</Button>
+              <Button>5</Button>
+              <Button>6</Button>
+              <Button>x</Button>
       </section>
       <section className='flex items-stretch bg-purple-900 h-20'>
-              <Button 
-              text = '1' />
-              <Button 
-              text = '2' />
-              <Button 
-              text = '3' />
-              <Button 
-              text = '-' />
+              <Button>1</Button>
+              <Button>2</Button>
+              <Button>3</Button>
+              <Button>-</Button>
       </section>
       <section className='flex items-stretch bg-purple-900 h-20'>
-              <Button 
-              text = '0' />
-              <Button 
-              text = '.' />
-              <EqualButton 
-              text = '=' />
-              <Button 
-              text = '+' />
+              <Button>0</Button>
+              <Button>.</Button>
+              <EqualButton>=</EqualButton>
+              <Button>+</Button>
       </section>
       <section className='flex items-stretch bg-purple-900 h-20'>
-              <Clearbutton
-              text = 'Clear'/>
+              <Clearbutton>Clear</Clearbutton>
       </section>
     </div>
   </div>
