@@ -12,24 +12,22 @@ import {useState} from 'react';
 function App() {
 
 
-  const [input, setInput] = useState('0');
+const [input, setInput] = useState('0');
 
+return (
 
-
-  return (
-
-  <div className='App h-screen'>
-    <div className='object-contain h-12 mt-1 flex justify-center'>
-      <img
-        src ={logo}
-        className='logo'
-        alt='logo' />
-    </div>
-      <div className='mx-auto overflow-hidden mt-2 shadow-lg mb-2 bg-purple-900 shadow-lg border rounded-lg lg:w-2/6 md:w-3/6 sm:w-4/6'>
+<div className='App h-screen'>
+        <div className='object-contain h-12 mt-1 flex justify-center'>
+                <img
+                src ={logo}
+                className='logo'
+                alt='logo' />
+        </div>
+        <div className='mx-auto overflow-hidden mt-2 shadow-lg mb-2 bg-purple-900 shadow-lg border rounded-lg lg:w-2/6 md:w-3/6 sm:w-4/6'>
         <section>
-              <Title />
-              <Screen input ={input} />
-              <ResultScreen />
+                <Title />
+                <Screen input ={input} />
+                <ResultScreen />
         </section>
         <section className='flex items-stretch bg-purple-900 h-20'>
                 <Button>7</Button>
@@ -58,10 +56,10 @@ function App() {
         <section className='flex items-stretch bg-purple-900 h-20'>
                 <Clearbutton>Clear</Clearbutton>
         </section>
-    </div>
-  </div>
+        </div>
+</div>
 
-  );
+);
 
 }
 
