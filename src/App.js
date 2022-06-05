@@ -1,10 +1,10 @@
 import './App.css';
-import logo from './img/logo.png';
 import Button from './components/button';
 import EqualButton from './components/equalbutton';
 import Clearbutton from './components/clearbutton';
 import Screen from './components/screen';
 import Title from './components/title';
+import DeleteButton from './components/delete';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
 
@@ -32,16 +32,17 @@ const calculateResult = () => {
 return (
 
         <div className='App h-screen'>
-                <div className='object-contain h-16 mt-1 flex justify-center'>
-                        <img
-                        src ={logo}
-                        className='logo'
-                        alt='logo' />
-                </div>
+
                 <div className='mx-auto overflow-hidden mt-2 shadow-lg mb-2 bg-slate-700 shadow-lg border rounded-lg lg:w-2/6 md:w-3/6 sm:w-4/6'>
                 <section>
                         <Title />
                         <Screen input={input} />
+                </section>
+                <section className='flex items-stretch bg-slate-700 h-20'>      
+                        <Button handleClick={addInput}>%</Button>
+                        <Button handleClick={addInput}>(</Button>
+                        <Button handleClick={addInput}>)</Button>
+                        <DeleteButton handleClick ={() => setInput ('')}>c</DeleteButton>
                 </section>
                 <section className='flex items-stretch bg-slate-700 h-20'>      
                         <Button handleClick={addInput}>7</Button>
@@ -68,9 +69,7 @@ return (
                         <Button handleClick={addInput}>+</Button>
                 </section>
                 <section className='flex items-stretch bg-slate-700 h-20'>
-                        <Clearbutton handleClick ={() => setInput ('')}>
-                                Reset
-                        </Clearbutton>
+                        <Clearbutton handleClick ={() => setInput ('')}>Reset</Clearbutton>
                 </section>
                 </div>
         </div>
