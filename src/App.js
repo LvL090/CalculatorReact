@@ -4,9 +4,9 @@ import Button from './components/button';
 import EqualButton from './components/equalbutton';
 import Clearbutton from './components/clearbutton';
 import Screen from './components/screen';
-//import ResultScreen from './components/resultScreen';
 import Title from './components/title';
-import {useState} from 'react';
+import { useState } from 'react';
+import { evaluate } from 'mathjs';
 
 
 
@@ -15,10 +15,18 @@ function App() {
 
 
 const [input, setInput] = useState('');
-
 const addInput = val => {
         setInput(input + val);
 
+};
+
+const calculateResult = () => {
+        if (input) {
+        setInput(evaluate(input));
+        }
+        else {
+                alert ("Please enter values ​​to perform calculations") ;
+        }
 };
 
 return (
@@ -56,7 +64,7 @@ return (
                 <section className='flex items-stretch bg-purple-900 h-20'>
                         <Button handleClick={addInput}>0</Button>
                         <Button handleClick={addInput}>.</Button>
-                        <EqualButton handleClick={addInput}>=</EqualButton>
+                        <EqualButton handleClick={calculateResult}>=</EqualButton>
                         <Button handleClick={addInput}>+</Button>
                 </section>
                 <section className='flex items-stretch bg-purple-900 h-20'>

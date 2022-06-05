@@ -3,7 +3,7 @@ import React from 'react';
 function EqualButton (props) {
 
     const IsOperator = value => {
-        return isNaN(value) && (value != '=');
+        return isNaN(value) && (value !== '=');
     };
 
     return (
