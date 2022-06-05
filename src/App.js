@@ -7,7 +7,8 @@ import Screen from './components/screen';
 //import ResultScreen from './components/resultScreen';
 import Title from './components/title';
 import {useState} from 'react';
-import Section from './components/section';
+
+
 
 
 function App() {
@@ -34,13 +35,12 @@ return (
                         <Title />
                         <Screen input={input} />
                 </section>
-                <Section>
-                        <Button handleClick={addInput}>7</Button>
+                <section className='flex items-stretch bg-purple-900 h-20'>      
                         <Button handleClick={addInput}>7</Button>
                         <Button handleClick={addInput}>8</Button>
                         <Button handleClick={addInput}>9</Button>
                         <Button handleClick={addInput}>÷</Button>
-                </Section>
+                </section>
                 <section className='flex items-stretch bg-purple-900 h-20'>
                         <Button handleClick={addInput}>4</Button>
                         <Button handleClick={addInput}>5</Button>
@@ -60,7 +60,9 @@ return (
                         <Button handleClick={addInput}>+</Button>
                 </section>
                 <section className='flex items-stretch bg-purple-900 h-20'>
-                        <Clearbutton>Reset</Clearbutton>
+                        <Clearbutton handleClick ={() => setInput ('')}>
+                                Reset
+                        </Clearbutton>
                 </section>
                 </div>
         </div>

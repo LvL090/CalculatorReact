@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 
 function ResultScreen (props) {
     return (
@@ -11,4 +11,4 @@ function ResultScreen (props) {
     )
 }
 
-export default ResultScreen;*/
+export default ResultScreen;
