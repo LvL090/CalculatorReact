@@ -38,36 +38,36 @@ return (
                         className='logo'
                         alt='logo' />
                 </div>
-                <div className='mx-auto overflow-hidden mt-2 shadow-lg mb-2 bg-purple-900 shadow-lg border rounded-lg lg:w-2/6 md:w-3/6 sm:w-4/6'>
+                <div className='mx-auto overflow-hidden mt-2 shadow-lg mb-2 bg-slate-700 shadow-lg border rounded-lg lg:w-2/6 md:w-3/6 sm:w-4/6'>
                 <section>
                         <Title />
                         <Screen input={input} />
                 </section>
-                <section className='flex items-stretch bg-purple-900 h-20'>      
+                <section className='flex items-stretch bg-slate-700 h-20'>      
                         <Button handleClick={addInput}>7</Button>
                         <Button handleClick={addInput}>8</Button>
                         <Button handleClick={addInput}>9</Button>
                         <Button handleClick={addInput}>÷</Button>
                 </section>
-                <section className='flex items-stretch bg-purple-900 h-20'>
+                <section className='flex items-stretch bg-slate-700 h-20'>
                         <Button handleClick={addInput}>4</Button>
                         <Button handleClick={addInput}>5</Button>
                         <Button handleClick={addInput}>6</Button>
                         <Button handleClick={addInput}>x</Button>
                 </section>
-                <section className='flex items-stretch bg-purple-900 h-20'>
+                <section className='flex items-stretch bg-slate-700 h-20'>
                         <Button handleClick={addInput}>1</Button>
                         <Button handleClick={addInput}>2</Button>
                         <Button handleClick={addInput}>3</Button>
                         <Button handleClick={addInput}>-</Button>
                 </section>
-                <section className='flex items-stretch bg-purple-900 h-20'>
+                <section className='flex items-stretch bg-slate-700 h-20 mb-10'>
                         <Button handleClick={addInput}>0</Button>
                         <Button handleClick={addInput}>.</Button>
                         <EqualButton handleClick={calculateResult}>=</EqualButton>
                         <Button handleClick={addInput}>+</Button>
                 </section>
-                <section className='flex items-stretch bg-purple-900 h-20'>
+                <section className='flex items-stretch bg-slate-700 h-20'>
                         <Clearbutton handleClick ={() => setInput ('')}>
                                 Reset
                         </Clearbutton>
