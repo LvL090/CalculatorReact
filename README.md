@@ -1,3 +1,11 @@
+Aplicación desarrollada con React, una calculadora interactiva que realiza las cuatro operaciones aritméticas básicas (suma, resta, multiplicación y división) como práctica de funciones,importaciones y componentes.
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
