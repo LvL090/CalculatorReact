@@ -32,7 +32,7 @@ const calculateResult = () => {
 return (
 
         <div className='App h-screen'>
-                <div className='object-contain h-12 mt-1 flex justify-center'>
+                <div className='object-contain h-16 mt-1 flex justify-center'>
                         <img
                         src ={logo}
                         className='logo'
@@ -47,13 +47,13 @@ return (
                         <Button handleClick={addInput}>7</Button>
                         <Button handleClick={addInput}>8</Button>
                         <Button handleClick={addInput}>9</Button>
-                        <Button handleClick={addInput}>÷</Button>
+                        <Button handleClick={addInput}>/</Button>
                 </section>
                 <section className='flex items-stretch bg-slate-700 h-20'>
                         <Button handleClick={addInput}>4</Button>
                         <Button handleClick={addInput}>5</Button>
                         <Button handleClick={addInput}>6</Button>
-                        <Button handleClick={addInput}>x</Button>
+                        <Button handleClick={addInput}>*</Button>
                 </section>
                 <section className='flex items-stretch bg-slate-700 h-20'>
                         <Button handleClick={addInput}>1</Button>
