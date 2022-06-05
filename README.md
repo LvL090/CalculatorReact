@@ -3,10 +3,7 @@ Aplicación desarrollada con React, una calculadora interactiva que realiza las 
 https://lvl090.github.io/CalculatorReact/
 
 
-
-
-
-
+![calculadora](https://user-images.githubusercontent.com/99020950/172051677-072bd982-27f3-4270-ae6f-8d7e0f352714.jpg)
 
 
 # Getting Started with Create React App
