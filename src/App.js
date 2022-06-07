@@ -5,6 +5,7 @@ import Clearbutton from './components/clearbutton';
 import Screen from './components/screen';
 import Title from './components/title';
 import DeleteButton from './components/delete';
+//import Section from './components/section';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
 
